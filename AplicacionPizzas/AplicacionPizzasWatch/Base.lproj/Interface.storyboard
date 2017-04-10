@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--PizzaController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="PizzaController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AplicacionPizzasWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Tamaño de pizza" textAlignment="center" id="X5r-uh-bA5"/>
+                        <button width="1" alignment="left" title="Chica" id="S7z-DI-NTj">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setPizzaChica" destination="AgC-eL-Hgc" id="KuZ-nJ-Zbt"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mediana" id="DGB-5Y-d3B">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setPizzaMediana" destination="AgC-eL-Hgc" id="rJ6-g4-Weo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Grande" id="f4s-QR-c8t">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setPizzaGrande" destination="AgC-eL-Hgc" id="qnF-Nl-aHD"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="dlU-yv-b6O"/>
+                    </items>
+                    <connections>
+                        <outlet property="setPizzaMediana" destination="DGB-5Y-d3B" id="Dor-Oa-jPK"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--QuesoController-->
+        <scene sceneID="wqU-Ai-fTU">
+            <objects>
+                <controller identifier="QuesoController" id="fzT-fb-niX" customClass="TipoQuesoInterfaceController" customModule="AplicacionPizzasWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Tipo de queso" textAlignment="center" id="nEI-CA-tSg"/>
+                        <button width="1" height="39" alignment="left" title="Mozzarela" id="2xZ-Wt-2Su">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setMozzarela" destination="fzT-fb-niX" id="piH-fp-B6M"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="37" alignment="left" title="Cheddar" id="Ufr-sP-yBx">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setCheddar" destination="fzT-fb-niX" id="r9c-8H-W5A"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="37" alignment="left" title="Parmesano" id="ZsE-gI-lbb">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setParmesano" destination="fzT-fb-niX" id="Ygn-Hj-j4W"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sin queso" id="rit-kV-mS4">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setSinQueso" destination="fzT-fb-niX" id="LtO-Ri-slp"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="fBP-S3-qZU"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="606" y="164.5"/>
+        </scene>
+        <!--ConfirmacionController-->
+        <scene sceneID="bEQ-6f-Qwu">
+            <objects>
+                <controller identifier="ConfirmacionController" id="7re-LE-7WS" customClass="ConfirmacionInterfaceController" customModule="AplicacionPizzasWatch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Tamaño" textAlignment="left" id="0E5-Xs-iiL"/>
+                        <label width="1" alignment="left" textAlignment="right" id="vL2-uB-MMM">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label width="1" alignment="left" text="Masa" textAlignment="left" id="kzB-IW-Qjl"/>
+                        <label width="1" alignment="left" textAlignment="right" id="3aw-Mk-xCd">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label width="1" alignment="left" text="Queso" textAlignment="left" id="V5G-Rg-J5x"/>
+                        <label width="1" alignment="left" textAlignment="right" id="ltw-Y7-E7D">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label width="1" alignment="left" text="Ingredientes" textAlignment="left" id="FyI-Sn-leY"/>
+                        <label width="1" alignment="left" textAlignment="left" numberOfLines="3" id="2VS-yS-Kth">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <separator alignment="left" id="2VD-FW-1CX"/>
+                        <button width="1" alignment="left" title="Confirmar Orden" id="4IA-PY-rrV">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="ConfirmarUsuario" destination="7re-LE-7WS" id="P14-8b-aLl"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cambiar Selección" id="fQ5-Up-QHb">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="Ind-wo-4fj"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cambiarSeleccionbutton" destination="fQ5-Up-QHb" id="zlJ-ce-aN8"/>
+                        <outlet property="confirmarOrdenButton" destination="4IA-PY-rrV" id="udH-pO-WnC"/>
+                        <outlet property="ingredientesLabel" destination="2VS-yS-Kth" id="Mgj-LW-4py"/>
+                        <outlet property="masaLabel" destination="3aw-Mk-xCd" id="V2P-aH-ZMV"/>
+                        <outlet property="quesoLabel" destination="ltw-Y7-E7D" id="cF2-Oo-vNP"/>
+                        <outlet property="tamanoLabel" destination="vL2-uB-MMM" id="m6A-W2-Ie1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="495" y="537"/>
+        </scene>
+        <!--IngredientesController-->
+        <scene sceneID="B3G-TF-k5n">
+            <objects>
+                <controller identifier="IngredientesController" id="3ij-KS-kfT" customClass="IngredientesInterfaceController" customModule="AplicacionPizzasWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Ingredientes" textAlignment="center" id="Mlk-D3-KPq"/>
+                        <group width="1" alignment="left" layout="vertical" id="33K-AF-6WU">
+                            <items>
+                                <switch width="1" alignment="left" title="Jamón" id="4rx-IG-0XI">
+                                    <connections>
+                                        <action selector="guardarJamon:" destination="3ij-KS-kfT" id="yFe-Sz-17D"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Peperonni" id="s4m-sZ-Yaa">
+                                    <connections>
+                                        <action selector="guardarPeperonni:" destination="3ij-KS-kfT" id="7aa-Av-Yt0"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Salchicha" id="NzP-j0-Y9j">
+                                    <connections>
+                                        <action selector="guardarSalchicha:" destination="3ij-KS-kfT" id="q6t-u5-Gz6"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Pavo" id="btf-ao-Ei7">
+                                    <connections>
+                                        <action selector="guardarPavo:" destination="3ij-KS-kfT" id="lnI-Dm-HT9"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Pimiento" id="Lwo-DC-6bO">
+                                    <connections>
+                                        <action selector="guardarPimiento:" destination="3ij-KS-kfT" id="20P-kH-CQE"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Cebolla" id="Lkk-Bb-QHW">
+                                    <connections>
+                                        <action selector="guardarCebolla:" destination="3ij-KS-kfT" id="azq-JV-cGo"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Piña" id="qrN-dE-ela">
+                                    <connections>
+                                        <action selector="guardarPina:" destination="3ij-KS-kfT" id="nlq-2O-JF8"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Aceituna" id="8Nc-D2-gDH">
+                                    <connections>
+                                        <action selector="guardarAceituna:" destination="3ij-KS-kfT" id="VJm-Ui-2YB"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Anchoa" id="gaU-xQ-Jhn">
+                                    <connections>
+                                        <action selector="guardarAnchoa:" destination="3ij-KS-kfT" id="1pt-DN-OCn"/>
+                                    </connections>
+                                </switch>
+                                <switch width="1" alignment="left" title="Carne" id="yqY-ph-iK8">
+                                    <connections>
+                                        <action selector="guardarCarne:" destination="3ij-KS-kfT" id="Cc2-qB-Db2"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="qaD-9V-bPi"/>
+                        <button width="1" alignment="left" title="Continuar" id="V58-Wu-SOa">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="continuar" destination="3ij-KS-kfT" id="KJM-JA-u3M"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="854" y="431.5"/>
+        </scene>
+        <!--MasaController-->
+        <scene sceneID="7Sj-dr-8Uu">
+            <objects>
+                <controller identifier="MasaController" id="vgV-0G-TLD" customClass="TipoMasaInterfaceController" customModule="AplicacionPizzasWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Tipo de masa" textAlignment="center" id="rag-mB-xCQ"/>
+                        <button width="1" alignment="left" title="Delgada" id="I2T-oW-t8g">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setMasaDelgada" destination="vgV-0G-TLD" id="X2M-Ji-nl8"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cruijente" id="4Pp-f0-Yt3">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setMasaCrujiente" destination="vgV-0G-TLD" id="4zh-3c-mnj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gruesa" id="qYy-3i-dpW">
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="setMasaGruesa" destination="vgV-0G-TLD" id="r98-HN-zCD"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="fDa-Ve-K72"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="354" y="150"/>
+        </scene>
+    </scenes>
+</document>
